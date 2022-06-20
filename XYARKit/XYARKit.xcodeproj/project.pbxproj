@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		208AC177FF4E452B2541B1A5 /* Pods_XYARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F6159B01402D02CC1769B0 /* Pods_XYARKit.framework */; };
+		CE09EF4327FD9D370096104E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF4227FD9D370096104E /* AppDelegate.swift */; };
+		CE09EF4527FD9D370096104E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF4427FD9D370096104E /* SceneDelegate.swift */; };
+		CE09EF4727FD9D370096104E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF4627FD9D370096104E /* ViewController.swift */; };
+		CE09EF4A27FD9D370096104E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE09EF4827FD9D370096104E /* Main.storyboard */; };
+		CE09EF4C27FD9D390096104E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE09EF4B27FD9D390096104E /* Assets.xcassets */; };
+		CE09EF4F27FD9D390096104E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE09EF4D27FD9D390096104E /* LaunchScreen.storyboard */; };
+		CE09EF5827FDA3480096104E /* ARSceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF5727FDA3480096104E /* ARSceneController.swift */; };
+		CE09EF5A27FDA36E0096104E /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF5927FDA36E0096104E /* ARView.swift */; };
+		CE09EF5C27FDA3850096104E /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF5B27FDA3850096104E /* VirtualObject.swift */; };
+		CE09EF6027FDB6040096104E /* ARUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF5F27FDB6040096104E /* ARUtilities.swift */; };
+		CE09EF6227FE8CE40096104E /* ARSceneController+ARCoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF6127FE8CE40096104E /* ARSceneController+ARCoachingOverlay.swift */; };
+		CE09EF6427FE8F4A0096104E /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CE09EF6327FE8F4A0096104E /* Models.scnassets */; };
+		CEAA6A4B281B8F1B0044B31C /* CameraButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA6A4A281B8F1A0044B31C /* CameraButtonView.swift */; };
+		CEAA6A4D281B913C0044B31C /* ARResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA6A4C281B913C0044B31C /* ARResultController.swift */; };
+		CEAA85D5281BA6790044B31C /* ARUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA85D4281BA6790044B31C /* ARUtil.swift */; };
+		CEAA85D9281BC4680044B31C /* XYARModule.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEAA85D8281BC4680044B31C /* XYARModule.bundle */; };
+		CEE38FA128068A3D00BAA8A1 /* ARSceneController+RecordAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE38FA028068A3D00BAA8A1 /* ARSceneController+RecordAR.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		76F6159B01402D02CC1769B0 /* Pods_XYARKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYARKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE09EF3F27FD9D370096104E /* XYARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYARKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE09EF4227FD9D370096104E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE09EF4427FD9D370096104E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE09EF4627FD9D370096104E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE09EF4927FD9D370096104E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE09EF4B27FD9D390096104E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE09EF4E27FD9D390096104E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE09EF5027FD9D390096104E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE09EF5727FDA3480096104E /* ARSceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARSceneController.swift; path = /Users/user/SourceCode/ARKitModule/XYARKit/XYARKit/ARSceneController.swift; sourceTree = "<absolute>"; };
+		CE09EF5927FDA36E0096104E /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		CE09EF5B27FDA3850096104E /* VirtualObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		CE09EF5F27FDB6040096104E /* ARUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARUtilities.swift; sourceTree = "<group>"; };
+		CE09EF6127FE8CE40096104E /* ARSceneController+ARCoachingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneController+ARCoachingOverlay.swift"; sourceTree = "<group>"; };
+		CE09EF6327FE8F4A0096104E /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		CEAA6A4A281B8F1A0044B31C /* CameraButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraButtonView.swift; sourceTree = "<group>"; };
+		CEAA6A4C281B913C0044B31C /* ARResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARResultController.swift; sourceTree = "<group>"; };
+		CEAA85D4281BA6790044B31C /* ARUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARUtil.swift; sourceTree = "<group>"; };
+		CEAA85D8281BC4680044B31C /* XYARModule.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XYARModule.bundle; sourceTree = "<group>"; };
+		CEE38FA028068A3D00BAA8A1 /* ARSceneController+RecordAR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARSceneController+RecordAR.swift"; sourceTree = "<group>"; };
+		EA535740EF28CAAE92F7E37C /* Pods-XYARKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYARKit.debug.xcconfig"; path = "Target Support Files/Pods-XYARKit/Pods-XYARKit.debug.xcconfig"; sourceTree = "<group>"; };
+		F8EED016DC3EC7B55B7EFD81 /* Pods-XYARKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYARKit.release.xcconfig"; path = "Target Support Files/Pods-XYARKit/Pods-XYARKit.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE09EF3C27FD9D370096104E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208AC177FF4E452B2541B1A5 /* Pods_XYARKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		072A25AD15473859C544C346 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA535740EF28CAAE92F7E37C /* Pods-XYARKit.debug.xcconfig */,
+				F8EED016DC3EC7B55B7EFD81 /* Pods-XYARKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5F366A41BDB9C25841E2240 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76F6159B01402D02CC1769B0 /* Pods_XYARKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE09EF3627FD9D370096104E = {
+			isa = PBXGroup;
+			children = (
+				CE09EF4127FD9D370096104E /* XYARKit */,
+				CE09EF4027FD9D370096104E /* Products */,
+				072A25AD15473859C544C346 /* Pods */,
+				B5F366A41BDB9C25841E2240 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE09EF4027FD9D370096104E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE09EF3F27FD9D370096104E /* XYARKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE09EF4127FD9D370096104E /* XYARKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE09EF4227FD9D370096104E /* AppDelegate.swift */,
+				CE09EF4427FD9D370096104E /* SceneDelegate.swift */,
+				CE09EF4627FD9D370096104E /* ViewController.swift */,
+				CE09EF5727FDA3480096104E /* ARSceneController.swift */,
+				CEE38FA028068A3D00BAA8A1 /* ARSceneController+RecordAR.swift */,
+				CE09EF5927FDA36E0096104E /* ARView.swift */,
+				CE09EF6127FE8CE40096104E /* ARSceneController+ARCoachingOverlay.swift */,
+				CE09EF5B27FDA3850096104E /* VirtualObject.swift */,
+				CE09EF5F27FDB6040096104E /* ARUtilities.swift */,
+				CEAA6A4A281B8F1A0044B31C /* CameraButtonView.swift */,
+				CEAA6A4C281B913C0044B31C /* ARResultController.swift */,
+				CEAA85D4281BA6790044B31C /* ARUtil.swift */,
+				CEAA85D8281BC4680044B31C /* XYARModule.bundle */,
+				CE09EF6327FE8F4A0096104E /* Models.scnassets */,
+				CE09EF4827FD9D370096104E /* Main.storyboard */,
+				CE09EF4B27FD9D390096104E /* Assets.xcassets */,
+				CE09EF4D27FD9D390096104E /* LaunchScreen.storyboard */,
+				CE09EF5027FD9D390096104E /* Info.plist */,
+			);
+			path = XYARKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE09EF3E27FD9D370096104E /* XYARKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE09EF5327FD9D390096104E /* Build configuration list for PBXNativeTarget "XYARKit" */;
+			buildPhases = (
+				2A4AFD376852218F542367DC /* [CP] Check Pods Manifest.lock */,
+				CE09EF3B27FD9D370096104E /* Sources */,
+				CE09EF3C27FD9D370096104E /* Frameworks */,
+				CE09EF3D27FD9D370096104E /* Resources */,
+				6B517A4D81CD49204EFE276B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYARKit;
+			productName = XYARKit;
+			productReference = CE09EF3F27FD9D370096104E /* XYARKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE09EF3727FD9D370096104E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CE09EF3E27FD9D370096104E = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = CE09EF3A27FD9D370096104E /* Build configuration list for PBXProject "XYARKit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE09EF3627FD9D370096104E;
+			productRefGroup = CE09EF4027FD9D370096104E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE09EF3E27FD9D370096104E /* XYARKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE09EF3D27FD9D370096104E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAA85D9281BC4680044B31C /* XYARModule.bundle in Resources */,
+				CE09EF4F27FD9D390096104E /* LaunchScreen.storyboard in Resources */,
+				CE09EF6427FE8F4A0096104E /* Models.scnassets in Resources */,
+				CE09EF4C27FD9D390096104E /* Assets.xcassets in Resources */,
+				CE09EF4A27FD9D370096104E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A4AFD376852218F542367DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XYARKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B517A4D81CD49204EFE276B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XYARKit/Pods-XYARKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XYARKit/Pods-XYARKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XYARKit/Pods-XYARKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE09EF3B27FD9D370096104E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE09EF5A27FDA36E0096104E /* ARView.swift in Sources */,
+				CE09EF4727FD9D370096104E /* ViewController.swift in Sources */,
+				CE09EF6027FDB6040096104E /* ARUtilities.swift in Sources */,
+				CEAA6A4D281B913C0044B31C /* ARResultController.swift in Sources */,
+				CEAA85D5281BA6790044B31C /* ARUtil.swift in Sources */,
+				CE09EF5C27FDA3850096104E /* VirtualObject.swift in Sources */,
+				CE09EF4327FD9D370096104E /* AppDelegate.swift in Sources */,
+				CEAA6A4B281B8F1B0044B31C /* CameraButtonView.swift in Sources */,
+				CE09EF4527FD9D370096104E /* SceneDelegate.swift in Sources */,
+				CEE38FA128068A3D00BAA8A1 /* ARSceneController+RecordAR.swift in Sources */,
+				CE09EF6227FE8CE40096104E /* ARSceneController+ARCoachingOverlay.swift in Sources */,
+				CE09EF5827FDA3480096104E /* ARSceneController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE09EF4827FD9D370096104E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE09EF4927FD9D370096104E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE09EF4D27FD9D390096104E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE09EF4E27FD9D390096104E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE09EF5127FD9D390096104E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE09EF5227FD9D390096104E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE09EF5427FD9D390096104E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA535740EF28CAAE92F7E37C /* Pods-XYARKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P378DMQNTD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XYARKit/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use Camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Use Micro";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Export AR Media";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Export AR Media";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyi.XYARKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE09EF5527FD9D390096104E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8EED016DC3EC7B55B7EFD81 /* Pods-XYARKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P378DMQNTD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XYARKit/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use Camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Use Micro";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Export AR Media";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Export AR Media";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuyi.XYARKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE09EF3A27FD9D370096104E /* Build configuration list for PBXProject "XYARKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE09EF5127FD9D390096104E /* Debug */,
+				CE09EF5227FD9D390096104E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE09EF5327FD9D390096104E /* Build configuration list for PBXNativeTarget "XYARKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE09EF5427FD9D390096104E /* Debug */,
+				CE09EF5527FD9D390096104E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE09EF3727FD9D370096104E /* Project object */;
+}

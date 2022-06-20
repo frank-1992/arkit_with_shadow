@@ -1,0 +1,6 @@
+framework module Pods_XYARKit {
+  umbrella header "Pods-XYARKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
