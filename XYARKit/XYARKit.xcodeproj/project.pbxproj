@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		208AC177FF4E452B2541B1A5 /* Pods_XYARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F6159B01402D02CC1769B0 /* Pods_XYARKit.framework */; };
+		2F5AAFD72BB698ED003386BD /* ARSceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5AAFD62BB698ED003386BD /* ARSceneController.swift */; };
 		CE09EF4327FD9D370096104E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF4227FD9D370096104E /* AppDelegate.swift */; };
 		CE09EF4527FD9D370096104E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF4427FD9D370096104E /* SceneDelegate.swift */; };
 		CE09EF4727FD9D370096104E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF4627FD9D370096104E /* ViewController.swift */; };
 		CE09EF4A27FD9D370096104E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE09EF4827FD9D370096104E /* Main.storyboard */; };
 		CE09EF4C27FD9D390096104E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE09EF4B27FD9D390096104E /* Assets.xcassets */; };
 		CE09EF4F27FD9D390096104E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE09EF4D27FD9D390096104E /* LaunchScreen.storyboard */; };
-		CE09EF5827FDA3480096104E /* ARSceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF5727FDA3480096104E /* ARSceneController.swift */; };
 		CE09EF5A27FDA36E0096104E /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF5927FDA36E0096104E /* ARView.swift */; };
 		CE09EF5C27FDA3850096104E /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF5B27FDA3850096104E /* VirtualObject.swift */; };
 		CE09EF6027FDB6040096104E /* ARUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09EF5F27FDB6040096104E /* ARUtilities.swift */; };
@@ -28,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F5AAFD62BB698ED003386BD /* ARSceneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSceneController.swift; sourceTree = "<group>"; };
 		76F6159B01402D02CC1769B0 /* Pods_XYARKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYARKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE09EF3F27FD9D370096104E /* XYARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYARKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE09EF4227FD9D370096104E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		CE09EF4B27FD9D390096104E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE09EF4E27FD9D390096104E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE09EF5027FD9D390096104E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE09EF5727FDA3480096104E /* ARSceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARSceneController.swift; path = /Users/user/SourceCode/ARKitModule/XYARKit/XYARKit/ARSceneController.swift; sourceTree = "<absolute>"; };
 		CE09EF5927FDA36E0096104E /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		CE09EF5B27FDA3850096104E /* VirtualObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
 		CE09EF5F27FDB6040096104E /* ARUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARUtilities.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				CE09EF4227FD9D370096104E /* AppDelegate.swift */,
 				CE09EF4427FD9D370096104E /* SceneDelegate.swift */,
 				CE09EF4627FD9D370096104E /* ViewController.swift */,
-				CE09EF5727FDA3480096104E /* ARSceneController.swift */,
+				2F5AAFD62BB698ED003386BD /* ARSceneController.swift */,
 				CEE38FA028068A3D00BAA8A1 /* ARSceneController+RecordAR.swift */,
 				CE09EF5927FDA36E0096104E /* ARView.swift */,
 				CE09EF6127FE8CE40096104E /* ARSceneController+ARCoachingOverlay.swift */,
@@ -252,7 +252,7 @@
 				CE09EF4527FD9D370096104E /* SceneDelegate.swift in Sources */,
 				CEE38FA128068A3D00BAA8A1 /* ARSceneController+RecordAR.swift in Sources */,
 				CE09EF6227FE8CE40096104E /* ARSceneController+ARCoachingOverlay.swift in Sources */,
-				CE09EF5827FDA3480096104E /* ARSceneController.swift in Sources */,
+				2F5AAFD72BB698ED003386BD /* ARSceneController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

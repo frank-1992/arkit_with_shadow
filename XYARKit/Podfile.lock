@@ -1,28 +1,24 @@
 PODS:
   - MTDMulticastDelegate (1.0.1)
-  - SCNRecorder (2.7.0):
+  - SCNRecorder (2.8.1):
     - MTDMulticastDelegate
   - SnapKit (5.0.1)
-  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
-  - SCNRecorder (~> 2.7)
+  - SCNRecorder (~> 2.8.1)
   - SnapKit
-  - SVProgressHUD
 
 SPEC REPOS:
   trunk:
     - MTDMulticastDelegate
     - SCNRecorder
     - SnapKit
-    - SVProgressHUD
 
 SPEC CHECKSUMS:
   MTDMulticastDelegate: dcedff914c281710e3faa64b79ff775741f25b4b
-  SCNRecorder: f1891098c0ea72fe166a1c10fc2e5a4e3dd8c9a5
+  SCNRecorder: dd694ba1c5cd541a58f0794a45d70262109c7024
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: b491d28006a10ec5d5e279b2a8e290bc02c5d5e9
+PODFILE CHECKSUM: 07e13cd9a81038353e067bff0c253b24fa6ffba3
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.15.2

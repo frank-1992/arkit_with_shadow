@@ -7,5 +7,5 @@ target 'XYARKit' do
 
   # Pods for XYARKit
   pod 'SnapKit'
-  pod 'SCNRecorder', '~> 2.7'
+  pod 'SCNRecorder', '~> 2.8.1'
 end

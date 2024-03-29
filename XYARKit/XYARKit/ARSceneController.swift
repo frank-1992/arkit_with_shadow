@@ -65,20 +65,7 @@ public final class ARSceneController: UIViewController {
         button.layer.cornerRadius = 40
         button.tag = 100
         button.addTarget(self, action: #selector(recordingAction(_:)), for: .touchUpInside)
-//        button.addTarget(self, action: #selector(takePhotoAction(_:)), for: .touchUpInside)
         return button
-    }()
-    
-    public lazy var timeLabel: UILabel = {
-        let label = UILabel()
-        label.backgroundColor = .black.withAlphaComponent(0.5)
-        label.layer.cornerRadius = 6
-        label.layer.masksToBounds = true
-        label.textColor = UIColor.white
-        label.font = UIFont.systemFont(ofSize: 16)
-        label.textAlignment = .center
-        label.text = "00:00"
-        return label
     }()
     
     // about assets (photo, video)
@@ -154,20 +141,6 @@ public final class ARSceneController: UIViewController {
         
         // about video record
         setupARRecord()
-
-        // show record time
-        showRecordTime()
-    }
-    
-    // MARK: - record time
-    func showRecordTime() {
-        view.addSubview(timeLabel)
-        timeLabel.snp.makeConstraints { make in
-            make.bottom.equalTo(startRecordButton.snp.top).offset(-6)
-            make.centerX.equalTo(startRecordButton)
-            make.width.equalTo(60)
-            make.height.equalTo(30)
-        }
     }
     
     // MARK: - display virtual object

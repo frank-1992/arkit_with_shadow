@@ -10,7 +10,6 @@ import UIKit
 protocol CameraButtonViewDelegate: AnyObject {
     func startCaptureVideo()
     func stopCaptureVideo()
-    func takePhoto()
 }
 
 public class CameraButtonView: UIView {
@@ -113,18 +112,6 @@ public class CameraButtonView: UIView {
         return view
     }()
     
-    // switch camera mode
-    var currentCameraMode: CameraMode = .video {
-        didSet {
-            switch currentCameraMode {
-            case .picture:
-                animateFromVideoShutterToPhotoShutter()
-            case .video:
-                animateFromPhotoShutterToVideoShutter()
-            }
-        }
-    }
-    
     // recording status
     private(set) var isRecording: Bool = false
         
@@ -141,24 +128,15 @@ public class CameraButtonView: UIView {
     
     @objc
     private func tapActions(_ tap: UITapGestureRecognizer) {
-        switch currentCameraMode {
-        case .picture:
-            addCenterImageViewAnimation()
-            guard let delegate = delegate else {
-                return
-            }
-            delegate.takePhoto()
-        case .video:
-            guard let delegate = delegate else {
-                return
-            }
-            if isRecording {
-                stopCapture()
-                delegate.stopCaptureVideo()
-            } else {
-                startCapture()
-                delegate.startCaptureVideo()
-            }
+        guard let delegate = delegate else {
+            return
+        }
+        if isRecording {
+            stopCapture()
+            delegate.stopCaptureVideo()
+        } else {
+            startCapture()
+            delegate.startCaptureVideo()
         }
     }
     

@@ -1,5 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-XYARKit/Pods-XYARKit-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/MTDMulticastDelegate/MulticastDelegate.framework
 ${BUILT_PRODUCTS_DIR}/SCNRecorder/SCNRecorder.framework
-${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
